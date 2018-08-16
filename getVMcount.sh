@@ -9,3 +9,4 @@ else
  number=`ssh -oStrictHostKeyChecking=no -oBatchMode=yes $1 sudo vzlist -a | grep -iv hostname | grep -v ^$| wc -l`
  echo "VZ :$1 :$number"
 fi
+###
